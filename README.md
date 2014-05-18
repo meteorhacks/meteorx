@@ -6,7 +6,7 @@ This Meteor smart-package exposes few Internal Meteor API prototypes, which are 
 
 * Expose.Session - Meteor's session prototype
 * Expose.Subscription - Meteor's subscription prototype
-* Expose.MongoConnection - Also available with `MongoInternals.Connection`
+* Expose.MongoConnection - Meteor's mongo-livedata MongoConnection prototype
 * Expose.MongoCursor - Meteor's mongo-livedata Cursor prototype
 
 ## Installation

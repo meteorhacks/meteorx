@@ -20,7 +20,7 @@ Package.on_test(function(api) {
 });
 
 function configurePackage(api) {
-  api.use(['random'], 'server');
+  api.use(['random', 'mongo-livedata'], 'server');
   api.add_files([
     'lib/livedata.js',
     'lib/mongo-livedata.js',
