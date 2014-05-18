@@ -1,6 +1,6 @@
 {
   "name": "expose",
-  "description": "Exposing some of the internal Meteor API prototypes",
+  "description": "Exposing some of the internal Meteor APIs",
   "homepage": "https://github.com/arunoda/meteor-expose",
   "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
   "version": "0.1.2",

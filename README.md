@@ -1,13 +1,15 @@
 #meteor-expose
 
-This Meteor smart-package exposes few Internal Meteor API prototypes, which are not generally available.
+This Meteor smart-package exposes few Internal Meteor APIs, which are not generally exposed.
 
-## Available Prototypes
+## Available APIs
 
-* Expose.Session - Meteor's session prototype
-* Expose.Subscription - Meteor's subscription prototype
-* Expose.MongoConnection - Meteor's mongo-livedata MongoConnection prototype
-* Expose.MongoCursor - Meteor's mongo-livedata Cursor prototype
+* Expose.Session - livedata Session
+* Expose.Subscription - livedata Subscription
+* Expose.SessionCollectionView - livedata SessionCollectionView
+* Expose.SessionDocumentView - livedata SessionDocumentView
+* Expose.MongoConnection - mongo-livedata MongoConnection
+* Expose.MongoCursor - mongo-livedata Cursor
 
 ## Installation
 

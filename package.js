@@ -1,5 +1,5 @@
 Package.describe({
-  "summary": "Exposing some of the internal Meteor API prototypes"
+  "summary": "Exposing some of the internal Meteor APIs"
 });
 
 Package.on_use(function(api) {
