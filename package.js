@@ -1,5 +1,7 @@
 Package.describe({
-  "summary": "Exposing some of the internal Meteor APIs"
+  "summary": "Exposing Internal Meteor Apis to Hack Meteor Easily",
+  "version": "1.0.0",
+  "git": "https://github.com/meteorhacks/meteorx.git"
 });
 
 Package.on_use(function(api) {
