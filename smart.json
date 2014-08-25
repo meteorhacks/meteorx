@@ -1,8 +1,8 @@
 {
-  "name": "expose",
-  "description": "Exposing some of the internal Meteor APIs",
-  "homepage": "https://github.com/arunoda/meteor-expose",
+  "name": "meteorx",
+  "description": "Exposing Internal Meteor Apis to Hack Meteor Easily",
+  "homepage": "https://github.com/meteorhacks/meteorx",
   "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
-  "version": "0.2.0",
-  "git": "https://github.com/arunoda/meteor-expose.git"
+  "version": "1.0.0",
+  "git": "https://github.com/meteorhacks/meteorx.git"
 }
