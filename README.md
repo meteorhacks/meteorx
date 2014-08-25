@@ -1,8 +1,8 @@
-#meteor-expose
+#meteorx
 
-This Meteor smart-package exposes few Internal Meteor APIs, which are not generally exposed.
+### Exposing Internal Meteor Apis to Hack Meteor Easily
 
-## Available APIs
+## Available APIs - Server Side
 
 * Expose.Session - livedata Session
 * Expose.Subscription - livedata Subscription
@@ -13,12 +13,12 @@ This Meteor smart-package exposes few Internal Meteor APIs, which are not genera
 
 ## Installation
 
-~~~js
-mrt add expose
-~~~
+* with mrt: `mrt add meteorx`
+* with 0.9: `meteor add meteorhacks:meteorx`
 
 ## What you can do with this
 
-I really don't know :) 
+Think about your meteor related issues and fix them. Some of them are:
 
-If you are looking to alter how Meteor works internally. This might helps you to jump start.
+* Unblock Subscriptions
+* Remove MergeBox
