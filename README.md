@@ -4,12 +4,12 @@
 
 ## Available APIs - Server Side
 
-* Expose.Session - livedata Session
-* Expose.Subscription - livedata Subscription
-* Expose.SessionCollectionView - livedata SessionCollectionView
-* Expose.SessionDocumentView - livedata SessionDocumentView
-* Expose.MongoConnection - mongo-livedata MongoConnection
-* Expose.MongoCursor - mongo-livedata Cursor
+* MeteorX.Session - livedata Session
+* MeteorX.Subscription - livedata Subscription
+* MeteorX.SessionCollectionView - livedata SessionCollectionView
+* MeteorX.SessionDocumentView - livedata SessionDocumentView
+* MeteorX.MongoConnection - mongo-livedata MongoConnection
+* MeteorX.MongoCursor - mongo-livedata Cursor
 
 ## Installation
 

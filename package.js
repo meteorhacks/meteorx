@@ -8,7 +8,7 @@ Package.describe({
 Package.on_use(function(api) {
   configurePackage(api);
 
-  api.export(['Expose']);
+  api.export(['MeteorX']);
 });
 
 Package.on_test(function(api) {
