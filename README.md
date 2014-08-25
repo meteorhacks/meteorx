@@ -1,6 +1,6 @@
 #meteorx
 
-### Exposing Internal Meteor Apis to Hack Meteor Easily
+Exposing Internal Meteor Apis to Hack Meteor Easily
 
 ## Available APIs - Server Side
 
