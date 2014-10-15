@@ -45,3 +45,24 @@ Tinytest.add(
     test.isNotNull(MeteorX.MongoCursor.prototype._publishCursor);
   }
 );
+
+Tinytest.add(
+  'MongoLivedata - MongoOplogDriver',
+  function (test) {
+    test.isNotNull(MeteorX.MongoOplogDriver.prototype);
+  }
+);
+
+Tinytest.add(
+  'MongoLivedata - MongoPollingDriver',
+  function (test) {
+    test.isNotNull(MeteorX.MongoPollingDriver.prototype);
+  }
+);
+
+Tinytest.add(
+  'MongoLivedata - Multiplexer',
+  function (test) {
+    test.isNotNull(MeteorX.Multiplexer.prototype);
+  }
+);
