@@ -1,6 +1,6 @@
 Package.describe({
   "summary": "Exposing Internal Meteor Apis to Hack Meteor Easily",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "git": "https://github.com/meteorhacks/meteorx.git",
   "name": "meteorhacks:meteorx"
 });
