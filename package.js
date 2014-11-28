@@ -24,7 +24,7 @@ Package.on_test(function(api) {
 
 function configurePackage(api) {
   if(api.versionsFrom) {
-    api.versionsFrom('METEOR@0.9.0-rc14');
+    api.versionsFrom('METEOR@0.9.1');
   }
 
   api.use(['random', 'mongo-livedata'], 'server');
