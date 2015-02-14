@@ -1,68 +1,95 @@
-Tinytest.add(
+Tinytest.addAsync(
   'Livedata - Session',
-  function (test) {
-    test.isNotNull(MeteorX.Session.prototype);
-    test.isNotNull(MeteorX.Session.prototype.protocol_handlers);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.Session.prototype);
+      test.isNotNull(MeteorX.Session.prototype.protocol_handlers);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'Livedata - Subscription',
-  function (test) {
-    test.isNotNull(MeteorX.Subscription.prototype);
-    test.isNotNull(MeteorX.Subscription.prototype.added);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.Subscription.prototype);
+      test.isNotNull(MeteorX.Subscription.prototype.added);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'Livedata - SessionCollectionView',
-  function (test) {
-    test.isNotNull(MeteorX.SessionCollectionView.prototype);
-    test.isNotNull(MeteorX.SessionCollectionView.prototype.added);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.SessionCollectionView.prototype);
+      test.isNotNull(MeteorX.SessionCollectionView.prototype.added);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'Livedata - SessionDocumentView',
-  function (test) {
-    test.isNotNull(MeteorX.SessionDocumentView.prototype);
-    test.isNotNull(MeteorX.SessionDocumentView.prototype.added);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.SessionDocumentView.prototype);
+      test.isNotNull(MeteorX.SessionDocumentView.prototype.added);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'MongoLivedata - MongoConnection',
-  function (test) {
-    test.isNotNull(MeteorX.MongoConnection.prototype);
-    test.isNotNull(MeteorX.MongoConnection.prototype._insert);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.MongoConnection.prototype);
+      test.isNotNull(MeteorX.MongoConnection.prototype._insert);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'MongoLivedata - MongoCursor',
-  function (test) {
-    test.isNotNull(MeteorX.MongoCursor.prototype);
-    test.isNotNull(MeteorX.MongoCursor.prototype._publishCursor);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.MongoCursor.prototype);
+      test.isNotNull(MeteorX.MongoCursor.prototype._publishCursor);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'MongoLivedata - MongoOplogDriver',
-  function (test) {
-    test.isNotNull(MeteorX.MongoOplogDriver.prototype);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.MongoOplogDriver.prototype);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'MongoLivedata - MongoPollingDriver',
-  function (test) {
-    test.isNotNull(MeteorX.MongoPollingDriver.prototype);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.MongoPollingDriver.prototype);
+      done();
+    });
   }
 );
 
-Tinytest.add(
+Tinytest.addAsync(
   'MongoLivedata - Multiplexer',
-  function (test) {
-    test.isNotNull(MeteorX.Multiplexer.prototype);
+  function (test, done) {
+    MeteorX.onReady(function() {
+      test.isNotNull(MeteorX.Multiplexer.prototype);
+      done();
+    });
   }
 );
