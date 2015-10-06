@@ -1,17 +1,16 @@
 Package.describe({
   "summary": "Exposing Internal Meteor Apis to Hack Meteor Easily",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "git": "https://github.com/meteorhacks/meteorx.git",
   "name": "meteorhacks:meteorx"
 });
 
-Package.on_use(function(api) {
+Package.onUse(function(api) {
   configurePackage(api);
-
   api.export(['MeteorX']);
 });
 
-Package.on_test(function(api) {
+Package.onTest(function(api) {
   configurePackage(api);
   api.use([
     'tinytest',
@@ -23,11 +22,8 @@ Package.on_test(function(api) {
 });
 
 function configurePackage(api) {
-  if(api.versionsFrom) {
-    api.versionsFrom('METEOR@0.9.1');
-  }
-
-  api.use(['random', 'mongo-livedata'], 'server');
+  api.versionsFrom('METEOR@1.2');
+  api.use(['random', 'mongo'], 'server');
   api.add_files([
     'lib/livedata.js',
     'lib/mongo-livedata.js',
