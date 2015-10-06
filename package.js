@@ -22,7 +22,7 @@ Package.onTest(function(api) {
 });
 
 function configurePackage(api) {
-  api.versionsFrom('METEOR@1.2');
+  api.versionsFrom('METEOR@1.0');
   api.use(['random', 'mongo'], 'server');
   api.add_files([
     'lib/livedata.js',
