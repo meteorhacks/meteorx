@@ -35,7 +35,9 @@ exposeLivedata = function(namespace) {
 
 function exposeSubscription(session, namespace) {
   const subId = Random.id();
-  const publicationHandler = function() {this.ready()};
+  const publicationHandler = function() {
+    this.ready()
+  };
   const pubName = '__dummy_pub_' + Random.id();
 
   session._startSubscription(publicationHandler, subId, [], pubName);

@@ -1,11 +1,11 @@
-Fibers = Npm.require('fibers');
+Fibers = Npm.require("fibers");
 
 MeteorX = {};
 MeteorX._readyCallbacks = [];
 MeteorX._ready = false;
 
 MeteorX.onReady = function(cb) {
-  if(MeteorX._ready) {
+  if (MeteorX._ready) {
     return runWithAFiber(cb);
   }
 
@@ -15,8 +15,8 @@ MeteorX.onReady = function(cb) {
 MeteorX.Server = Meteor.server.constructor;
 exposeLivedata(MeteorX);
 
-// Before using any other MeteorX apis we need to hijack Mongo related code
-// That'w what we are doing here.
+// before using any other MeteorX apis we need to hijack Mongo related code
+// that'w what we are doing here.
 Meteor.startup(function() {
   runWithAFiber(function() {
     exposeMongoLivedata(MeteorX);
@@ -29,7 +29,7 @@ Meteor.startup(function() {
 });
 
 function runWithAFiber(cb) {
-  if(Fibers.current) {
+  if (Fibers.current) {
     cb();
   } else {
     new Fiber(cb).run();
