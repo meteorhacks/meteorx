@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.export(["MeteorX"]);
 });
 
-Package.onTest(functionfi(api) {
+Package.onTest(function(api) {
   configurePackage(api);
   api.use(["tinytest"], "server");
   api.add_files(["test/server.js"], "server");
